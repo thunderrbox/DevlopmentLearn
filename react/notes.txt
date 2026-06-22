@@ -1,0 +1,52 @@
+** React is js library used for building user interfaces and websites
+
+** ReactDOM.render() controls the contents of the container node you pass in.
+Currently return a reference to the root ReactComponent instance.
+
+
+---------------------------
+
+
+// import React from "react";
+
+// // function App(){
+// //   return (
+// //     <div>
+// //       Welcome to React Learning Projects!
+// //     </div>
+// //   )
+// // }
+
+// // const App = () => {
+// //   return React.createElement('div', null, 'Welcome to React Learning Projects!')
+// // }
+
+// const App = () => {
+//   return (
+//     <React.Fragment>
+//       <MyName />
+//       {/* // * or we can also use empty tag <> </> instead of React.Fragment * / */}
+
+//       {/* ------------------------------------ */}
+//       {/* //* in place of React.Fragment , we can also use div and section tag but handling React.Fragment will be easy  */}
+//       {/* ------------------------------------ */}
+
+//       {/* //* React.Fragment is used to group multiple elements without adding extra nodes to the DOM */}
+
+//       <h1>Welcome to React Learning Projects!</h1>
+//       <p>
+//         This is a simple React application.
+//         {3 + 4}{" "}
+//         {/* we can also write JavaScript expressions inside JSX using curly braces */}
+//       </p>
+//       <MyName />
+//     </React.Fragment>
+//   );
+// };
+
+// const MyName = () => {
+//   return <h2>My Name is John Doe</h2>;
+// };
+
+// export default App;
+

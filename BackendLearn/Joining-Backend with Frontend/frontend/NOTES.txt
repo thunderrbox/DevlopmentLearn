@@ -1,0 +1,10 @@
+we used npm run build command and got dist folder which is used for deployment. We can deploy it on any static hosting service like Netlify, Vercel, or GitHub Pages.
+but when we drag and drop this dist folder into the bckend for deploying 
+which though  saved cost for the server and the post request is working fine but the get request is not working because the server is not able to find the index.html file in the dist folder.
+but the changes will be shown in th ebroieser till we are changing in backend but when we refresh the page then it will show 404 error because the server is not able to find the index.html file in the dist folder.
+but when make changes in the frontend and then run npm run build command then it will create a new dist folder with the updated changes and then we can drag and drop this new dist folder into the backend for deploying and then the changes will be shown in the browser.
+it won't be available over the internet because we are not using any hosting service but it will be available on our local machine and we can access it by using localhost:3000 or any other port number that we have used in the backend for running the server.
+do we have to again drag and drop the new dist folder into the backend for deploying every time we make changes in the frontend and run npm run build command?
+Yes, every time we make changes in the frontend and run npm run build command, it will
+BUT THIS IS A BAD APPROACH SO WE CAN USE A BETTER APPROACH WHICH IS TO USE A PROXY SERVER IN THE FRONTEND TO FORWARD THE REQUESTS TO THE BACKEND SERVER AND THEN WE CAN RUN BOTH THE SERVERS SIMULTANEOUSLY WITHOUT HAVING TO DRAG AND DROP THE DIST FOLDER EVERY TIME WE MAKE CHANGES IN THE FRONTEND.
+This way, we can make changes in the frontend and see the changes in the browser without having to worry about deploying the frontend every time. We can simply run the frontend server and the backend server simultaneously and they will communicate with each other through the proxy server. This is a much more efficient and convenient way to develop our application.
